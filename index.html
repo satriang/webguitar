@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+
+  <!-- TODO 3 - set the visual viewport -->
+  <meta name="viewport" content="width=device-width,  initial-scale=1">
+  <link rel="manifest" href="/manifest.json">
+
+    <!-- Add to home screen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Guitar Demo">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icons for Windows -->
+    <meta name="msapplication-TileImage" content="images/touch/apple-touch-icon.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+    .bg-1 { 
+        background-color: #1abc9c; /* Green */
+        color: #ffffff;
+    }
+    .bg-2 { 
+        background-color: #474e5d; /* Dark Blue */
+        color: #ffffff;
+    }
+    .bg-3 { 
+        background-color: #fff; /* White */
+        color: #555555;
+    }
+    </style>
+  <title>Satria Gitar Custom</title>
+
+  <!-- TODO 6.1 - include custom Modernizr build -->
+  <script src="modernizr-custom.js"></script>
+
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Produk</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="indexDB.html">Member</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+<div class="container-fluid bg-1 text-center">
+  <img src="images/sgc.png" class="img-circle" alt="Bird" width="350" height="350">
+</div>
+
+<div class="container-fluid bg-2 text-center">
+  <h3>Welcome To Satria Guitar Custom</h3>
+  <p>TEMPAT CUSTOM GUITAR UNTUK GITARIS BERKARAKTER. CUSTOM GUITAR MU SESUAI KARAKTER MU  </p>
+</div>
+<div class="container-fluid bg-3 text-center">    
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="images/gitaris1.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-4"> 
+        <img src="images/gitaris2.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-4"> 
+        <img src="images/gitaris3.jpg" class="img-responsive" style="width:100%" alt="Image">
+      </div>
+    </div>
+</div>
+<div class="footer">
+  <p>copyright © 2018 by Satria | Desain Theme Made By www.w3schools.com</p>
+</div>
+<script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+      .then(function(registration) {
+        console.log('Registered:', registration);
+      })
+      .catch(function(error) {
+        console.log('Registration failed: ', error);
+      });
+    }
+    </script>
+</body>
+</html>
